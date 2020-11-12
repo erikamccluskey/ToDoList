@@ -1,0 +1,17 @@
+<div id="<%= _id %>" >
+<form method="POST" action='/abandonorcomplete'>
+  <input type="hidden" name="_id" value="<%=_id%>" >
+  <input type="hidden" name="username" value="<%= username %>">
+<div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <div class="input-group-text">
+        <input onclick="{this.form.submit()}" name="complete" type="checkbox" aria-label="Checkbox for following text input">
+      </div>
+    </div>
+    <input id="disabledInput" placeholder="<%= taskName %>" type="text" class="form-control" aria-label="Text input with checkbox" disabled >
+    <div class="input-group-append">
+        <input class="btn btn-outline-secondary" name="abandon" type="submit" value="Abandon">
+      </div>
+  </div>
+</div>
+</form>

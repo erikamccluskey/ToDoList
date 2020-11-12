@@ -1,0 +1,10 @@
+<form method="POST" action="/addTask">
+<div class="input-group mb-3">
+    <input type="text" class="form-control" placeholder="Enter a new task here" name="newTask" id="newTask" aria-label="Text input">
+    <div class="input-group-append">
+            <input type="hidden" name="username" value="<%= username %>">
+            <input type="hidden" name="length" value="<%= length %>">
+        <input class="btn btn-outline-secondary" type="submit" id="addTask" value="Add">
+        </form>
+      </div>
+  </div>

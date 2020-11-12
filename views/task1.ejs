@@ -1,0 +1,12 @@
+<div id="<%= _id %>" >
+<div class="input-group mb-3">
+    <input  placeholder="<%= taskName %>" type="text" class="form-control" aria-label="Text input to claim" disabled>
+    <div class="input-group-append">
+    <form method="POST" action="/claim"> 
+      <input type="hidden" name="_id" value="<%=_id%>" >
+      <input type="hidden" name="username" value="<%= username %>">
+        <input class="btn btn-outline-secondary" type="submit" value="Claim"></button>
+      </form>
+      </div>
+  </div>
+</div>
